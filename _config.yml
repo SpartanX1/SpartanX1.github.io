@@ -33,7 +33,7 @@ plugins:
 titles_from_headings:
   strip_title: true
   collections: true
-
+mermaid: true
 defaults:
   - scope:
       path: ""
