@@ -86,7 +86,7 @@ First let’s define our commands in package.json file.
 Add the following command in contributes array,
 
 ```json
-"contributes": {"commands": [ {  "command": "extension.CreateFile",  "title": "Create a new file" }]},
+"contributes": {"commands": [ {  "command": "extension.CreateFile",  "title": "Create a new file" }]}
 ```
 
 Now in order to make this command available on right click in explorer menu, we need to add it to the [**menus**](https://code.visualstudio.com/api/references/contribution-points#contributes.menus) property inside contributes array.
@@ -105,14 +105,14 @@ Now in order to make this command available on right click in explorer menu, we 
   }
  ]
  }
-},
+}
 ```
 
 We are not done yet with package.json. There’s a final thing remaining. We need to add an activation event to the [**activationEvents**](https://code.visualstudio.com/api/references/activation-events#onCommand) array
 
 ```json
 "activationEvents": [ "onCommand:extension.CreateFile"
-],
+]
 ```
 
 So far so good. Now we only need to write some code to get our extension working!
