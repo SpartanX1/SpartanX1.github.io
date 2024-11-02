@@ -54,13 +54,13 @@ Now let’s add the UI. To do that create a `popup.html` file.
 ```html
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" href="button.css">
-</head>
-<body>
-<button id="clear">Clear</button>
-<script src="popup.js"></script>
-</body>
+ <head>
+ <link rel="stylesheet" href="button.css">
+ </head>
+ <body>
+  <button id="clear">Clear</button>
+  <script src="popup.js"></script>
+ </body>
 </html>
 ```
 
@@ -70,6 +70,7 @@ We have added a button here along with a script tag which mentions the script we
 
 ```js
 let clearButton = document.getElementById("clear");
+
 clearButton.addEventListener("click", async () => {
   let [tab] = await chrome.tabs.query({ active: true, currentWindow:      true });
   chrome.scripting.executeScript({
