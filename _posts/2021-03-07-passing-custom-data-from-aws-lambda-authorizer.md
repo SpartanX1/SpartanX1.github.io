@@ -7,7 +7,7 @@ A lambda authorizer is used to validate incoming JWT Tokens in API Gateway.
 
 However, sometime we would want to pass additional data after a successful validation so that the backend services can use them. This can be achieved by using the “**context**” field while we are building the auth response.
 
-```
+```json
 {
 	"principalId": "John",
 	"policyDocument": {
@@ -18,10 +18,10 @@ However, sometime we would want to pass additional data after a successful valid
 				"Resource": "arn:aws:execute-api:us-east-1:123456781345:0n1anivwva/test/GET/employees"
 		]
 	},
-	**"context": {
+	"context": {
 		"org": "UNSC",
 		"role": "Spartan2"
-	}**
+	}
 } 
 ```
 
