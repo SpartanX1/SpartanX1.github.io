@@ -10,7 +10,7 @@ For those new to gin, it is lightweight framework to write HTTP based APIs in Go
 In order to customize the error response on a runtime error or any other error thrown by the app, we use the [**CustomRecovery**](https://pkg.go.dev/github.com/gin-gonic/gin#CustomRecovery) middleware provided by gin. It executes whenever there is any error and then passes off the error to a custom function of the type `RecoveryFunc func(c *[Context](https://pkg.go.dev/github.com/gin-gonic/gin#Context), err [any](https://pkg.go.dev/builtin#any))`
 
 So, let’s write our recovery function first,
-https://gist.githubusercontent.com/SpartanX1/9c1a246d39e41712dc4fbc7100175e9e/raw/12566ebedf1561372643d9e969caf2a9832b3b3a/exception.handler.go
+<script src="https://gist.githubusercontent.com/SpartanX1/9c1a246d39e41712dc4fbc7100175e9e/raw/12566ebedf1561372643d9e969caf2a9832b3b3a/exception.handler.go"></script>
 
 Couple of things to note here, first we are using the [go-errors](https://pkg.go.dev/errors) package to wrap the error thrown by the gin recovery middleware using `errors.Wrap(err, 2)` . The 2nd parameter indicates how far up the stack to start the stacktrace. 0 is from the current call, 1 from its caller, etc. For now, we will not use it.
 
