@@ -7,6 +7,10 @@ hr {
     background: greenyellow !important;
 }
 
+.site-footer {
+    background: #cdcdc457 !important;
+}
+
 /* Post navigation links */
 .post_navi {
   display: flex;
