@@ -4,7 +4,7 @@ hr {
 }
 
 .site-header {
-    background: greenyellow;
+    background: greenyellow !important;
 }
 
 /* Post navigation links */
