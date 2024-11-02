@@ -359,4 +359,4 @@ Compile the project again and this time, it should produce 3 DLLs, namely our pr
 Copy and paste all three of them in the game directory and run the game. Now the bright yellow fps counter should pop up in the top left corner ! 
 
 Thanks for reading. 
-Here's the link to the entire code: https://github.com/SpartanX1/directx-proxy
+Here's the link to the entire code: [https://github.com/SpartanX1/directx-proxy](https://github.com/SpartanX1/directx-proxy)
