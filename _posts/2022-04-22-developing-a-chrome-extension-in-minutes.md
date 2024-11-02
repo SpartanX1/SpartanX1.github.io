@@ -58,8 +58,8 @@ Now let’s add the UI. To do that create a `popup.html` file.
 <link rel="stylesheet" href="button.css">
 </head>
 <body>
-<**button id="clear"**>Clear</**button**>
-<**script src="popup.js"**></**script**>
+<button id="clear">Clear</button>
+<script src="popup.js"></script>
 </body>
 </html>
 ```
@@ -69,13 +69,16 @@ We have added a button here along with a script tag which mentions the script we
 **Modifying** `popup.js`
 
 ```js
-let clearButton = document.getElementById("clear");clearButton.addEventListener("click", async () => {
- let [tab] = await chrome.tabs.query({ active: true, currentWindow:      true });
- chrome.scripting.executeScript({
- target: { tabId: tab.id },
- function: clearTokens,
+let clearButton = document.getElementById("clear");
+clearButton.addEventListener("click", async () => {
+  let [tab] = await chrome.tabs.query({ active: true, currentWindow:      true });
+  chrome.scripting.executeScript({
+  target: { tabId: tab.id },
+  function: clearTokens,
  });
-});**function** clearTokens() {
+});
+
+function clearTokens() {
  window.localStorage.removeItem('my-key');
 }
 ```
