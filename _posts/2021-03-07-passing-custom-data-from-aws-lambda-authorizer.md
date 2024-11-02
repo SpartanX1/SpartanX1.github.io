@@ -12,11 +12,11 @@ However, sometime we would want to pass additional data after a successful valid
 	"principalId": "John",
 	"policyDocument": {
 		"Version": "2012-10-17",
-		"Statement": [			{
+		"Statement": [ {
 				"Action": "execute-api:Invoke",
 				"Effect": "Allow",
 				"Resource": "arn:aws:execute-api:us-east-1:123456781345:0n1anivwva/test/GET/employees"
-		]
+		 }]
 	},
 	"context": {
 		"org": "UNSC",
