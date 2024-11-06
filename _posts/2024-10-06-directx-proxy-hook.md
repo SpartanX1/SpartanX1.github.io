@@ -1,4 +1,6 @@
-
+---
+tags: C++ DirectX
+---
 ## Capturing FPS from DirectX Games using Proxy DLL
 
 ![A screenshot from [Saints Row 2](https://store.steampowered.com/app/9480/Saints_Row_2/), showing FPS on the top left corner.](https://cdn-images-1.medium.com/max/2470/1*YrS6Qu75BdN0pKeT3Imb7Q.png)
