@@ -1,3 +1,6 @@
+---
+tags: Go
+---
 ![captionless image](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*hJR81BXeqgN0zwkPOxkQVg.png)
 
 Global Exception handling in Gin
