@@ -1,3 +1,6 @@
+---
+tags: C++ DirectX
+---
 # Microsoft Detours Novice Guide
 ![pexels-robertkso-15208236](https://github.com/SpartanX1/microsoft-detours-example/assets/37375281/7175c645-a0a2-4765-af1e-ce86337642a7)
 
