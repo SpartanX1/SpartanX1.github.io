@@ -1,3 +1,6 @@
+---
+tags: Javascript
+---
 Developing a Chrome extension in 15 minutes
 ===========================================
 
