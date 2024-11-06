@@ -1,3 +1,6 @@
+---
+tags: Go
+---
 ![captionless image](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*Ifpd_HtDiK9u6h68SZgNuA.png)
 
 Solving the Equivalent Binary Trees exercise in Go
