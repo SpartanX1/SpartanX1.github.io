@@ -1,3 +1,6 @@
+---
+tags: Bluetooth
+---
 Finding classic Bluetooth battery level using Windows UWP APIs and Sockets
 ==========================================================================
 
