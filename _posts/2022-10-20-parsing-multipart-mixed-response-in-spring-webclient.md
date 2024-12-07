@@ -33,7 +33,7 @@ Parsing
 
 Although we can parse this response ourselves since we already know the format, it would be tedious and time consuming. Fortunately Spring has exactly the thing we are looking for !
 
-Introducing the `[DefaultPartHttpMessageReader](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/http/codec/multipart/DefaultPartHttpMessageReader.html)` . It reads the `"multipart/form-data"` requests to a stream of `[Part](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/http/codec/multipart/Part.html)`s. Now let’s see how we can use this to get what we want.
+Introducing the [DefaultPartHttpMessageReader](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/http/codec/multipart/DefaultPartHttpMessageReader.html) . It reads the `"multipart/form-data"` requests to a stream of [Parts](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/http/codec/multipart/Part.html). Now let’s see how we can use this to get what we want.
 
 First, we need to initialize the reader
 
